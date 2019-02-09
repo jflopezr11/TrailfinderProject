@@ -1,0 +1,51 @@
+.generatedImgs {
+    width: 300px;
+    height: 260px;
+}
+
+div.card-content {height: 350px;}
+
+span.card-title {font-weight: bolder;}
+
+/* img .generatedImgs {} */
+
+.center-cols > .col {
+    float:none;             /* disable the float */
+    display: inline-block; /* make blocks inline-block */
+    text-align: initial;  /* restore text-align to default */
+}
+
+#test {
+    display: none;
+
+}
+
+.section-search input {
+    padding: 5px !important;
+    font-size: 18px !important;
+    width: 90% !important;
+    border: #f4f4f4 3px solid !important;
+} 
+.materialboxed {
+    margin-top: 20px;
+}
+.headings {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.page-footer{
+    background: url("images/hiking1.jpg");
+    resize: both;
+}
+.grey-text {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.section-follow {
+    background: url("images/leaves.jpg");
+    margin-bottom: 20px;
+    
+}
+.section-search {
+    background: url("images/trees.jpg");
+}
