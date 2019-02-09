@@ -45,40 +45,40 @@ $(document).ready(function () {
       /*-------------------------------END  of document( ready ) ----------------------------------*/
 
 
-    $("#findUser").on("click", function() {
-        console.log("click!!");
-    function geoFindMe() {
-        var output = document.getElementById("out");
+    // $("#findUser").on("click", function() {
+    //     console.log("click!!");
+    // function geoFindMe() {
+    //     var output = document.getElementById("out");
       
-        if (!navigator.geolocation){
-          output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
-          return;
-        }
+    //     if (!navigator.geolocation){
+    //       output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+    //       return;
+    //     }
       
-        function success(position) {
-          var userLat  = position.coords.latitude;
-          var userLong = position.coords.longitude;
+    //     function success(position) {
+    //       var userLat  = position.coords.latitude;
+    //       var userLong = position.coords.longitude;
       
-        //   output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
+    //     //   output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
       
-          var img = new Image();
-          img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + userLat + "," + userLong + "&zoom=13&size=300x300&sensor=false&key=AIzaSyC5lUnwf-VRtq5kRxiAYacGJ_3RsYznnNE";
+    //       var img = new Image();
+    //       img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + 113 + "," + -118 + "&zoom=13&size=300x300&sensor=false&key=AIzaSyC5lUnwf-VRtq5kRxiAYacGJ_3RsYznnNE";
       
-          output.appendChild(img);
-        }
+    //       output.appendChild(img);
+    //     }
       
-        function error() {
-          output.innerHTML = "Unable to retrieve your location";
-        }
+    //     function error() {
+    //       output.innerHTML = "Unable to retrieve your location";
+    //     }
       
-        output.innerHTML = "<p>Locating…</p>";
+    //     output.innerHTML = "<p>Locating…</p>";
       
-        navigator.geolocation.getCurrentPosition(success, error);
-    }
+    //     navigator.geolocation.getCurrentPosition(success, error);
+    // }
 
 
     // constructing a queryURL variable we will use instead of the literal string inside of the ajax method
-    var queryURL = "https://www.hikingproject.com/data/get-trails?lat=" +userLat+ "&lon=" +userLong+ "&maxDistance=15&key=200415127-68adde2ff6be3226f8cb65a7535b3ecc";
+    var queryURL = "https://www.hikingproject.com/data/get-trails?lat=" +"34"+ "&lon=" +"-118"+ "&maxDistance=15&key=200415127-68adde2ff6be3226f8cb65a7535b3ecc";
 
     $.ajax({
       url: queryURL,
@@ -138,7 +138,6 @@ $(document).ready(function () {
 
 
 
-    });
 
     // function initMap() {
         
