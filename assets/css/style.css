@@ -34,7 +34,7 @@ span.card-title {font-weight: bolder;}
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .page-footer{
-    background: url("images/hiking1.jpg");
+    background: url("../images2/hiking1.jpg");
     resize: both;
 }
 .grey-text {
@@ -42,10 +42,10 @@ span.card-title {font-weight: bolder;}
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .section-follow {
-    background: url("images/leaves.jpg");
+    background: url("../images2/leaves.jpg");
     margin-bottom: 20px;
     
 }
 .section-search {
-    background: url("images/trees.jpg");
+    background: url("../images2/trees.jpg");
 }
